@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link href="/admin_dashboard.css" rel="stylesheet">
+    <link href="/fonts.css" rel="stylesheet">
+    <script>
+        function confirmLogout() {
+            var logoutConfirmed = confirm("Are you sure you want to log out?");
+
+            if (logoutConfirmed) {
+                // Redirect to the logout page after confirming the logout
+                window.location.href = "index.html";
+
+            } else {
+                // User canceled logout
+                alert("Logout canceled");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="top-nav">
+            <div class="nav-1">
+                <div class="title">
+                    <h1>Library Management System</h1>
+                </div>
+            </div>
+
+            <div class="nav-2">
+                <div class="logo">
+                    <a href="/index.html"><img src="/LMS logo.png" alt="logo"></a>
+                </div>
+                <ul class="logins">
+                    <a href="/admin_dashboard.html">
+                        <li>Dashboard</li>
+                    </a>
+                    <a href="/admin_categories.html">
+                        <li>Categories</li>
+                    </a>
+                    <a href="/admin_authors.html">
+                        <li>Authors</li>
+                    </a>
+                    <a href="/admin_books.html">
+                        <li>Books</li>
+                    </a>
+                    <a href="/admin_issuebooks.html">
+                        <li>Issue Books</li>
+                    </a>
+                    <a href="/admin_regstudents.html">
+                        <li>Reg Students</li>
+                    </a>
+                    <a href="#" onclick="confirmLogout()">
+                        <li>LogOut</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <h3>CATEGORIES</h3>
+        <div class="main-container">
+            <div class="container" id="#Adventures">
+                <img src="/adventure.png" alt="book">
+                <h4>Adventures</h4>
+            </div>
+            <div class="container" id="Crime">
+                <img src="/handcuff.png" alt="menu">
+                <h4>Crime</h4>
+            </div>
+            <div class="container" id="Fairy Tales">
+                <img src="/castle.png" alt="return">
+                <h4>Fairy Tales</h4>
+            </div>
+
+            <div class="container" id="Fantasy">
+                <img src="/swordsman.png" alt="user">
+                <h4>Fantasy</h4>
+            </div>
+            <div class="container" id="Historical">
+                <img src="/church.png" alt="author">
+                <h4>Historical</h4>
+            </div>
+            <div class="container" id="Listed Categories">
+                <img src="/scream.png" alt="horror">
+                <h4>Horror</h4>
+            </div>
+        </div>
+
+        <div class="img-container">
+
+        </div>
+    </main>
+</body>
+
+</html>

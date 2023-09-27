@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Books Issue</title>
+    <link href="/admin_dashboard.css" rel="stylesheet">
+    <link href="/fonts.css" rel="stylesheet">
+    <style>
+        p {
+            margin:2rem;
+        }
+    </style>
+    <script>
+        function confirmLogout() {
+            var logoutConfirmed = confirm("Are you sure you want to log out?");
+
+            if (logoutConfirmed) {
+                // Redirect to the logout page after confirming the logout
+                window.location.href = "index.html";
+
+            } else {
+                // User canceled logout
+                alert("Logout canceled");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="top-nav">
+            <div class="nav-1">
+                <div class="title">
+                    <h1>Library Management System</h1>
+                </div>
+            </div>
+
+            <div class="nav-2">
+                <div class="logo">
+                    <a href="/index.html"><img src="/LMS logo.png" alt="logo"></a>
+                </div>
+                <ul class="logins">
+                    <a href="/admin_dashboard.html">
+                        <li>Dashboard</li>
+                    </a>
+                    <a href="/admin_categories.html">
+                        <li>Categories</li>
+                    </a>
+                    <a href="/admin_authors.html">
+                        <li>Authors</li>
+                    </a>
+                    <a href="/admin_books.html">
+                        <li>Books</li>
+                    </a>
+                    <a href="/admin_issuebooks.html">
+                        <li>Issue Books</li>
+                    </a>
+                    <a href="/admin_regstudents.html">
+                        <li>Reg Students</li>
+                    </a>
+                    <a href="#" onclick="confirmLogout()">
+                        <li>LogOut</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <h3>ISSUE BOOKS</h3>
+
+    <p>No.of books in record: 234561</p>
+    <p>No.of books issued: 32113</p>
+    <p>No.of books newly arrived: 12341</p>
+    <p>No.of books yet to be Returned:12341</p>
+    <p>No.of books that issued crossed due date: 1432</p>
+</body>
+
+</html>
